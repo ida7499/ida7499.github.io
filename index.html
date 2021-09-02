@@ -4,16 +4,41 @@
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FlowCoachTestS1</title>
+<title>FlowCoach</title>
 <style id="applicationStylesheet" type="text/css">
+:root {
+	--web-view-ids: Startseite_1,Web_1920__1;
+	--web-view-name: Startseite 1;
+	--web-view-id: Startseite_1;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: fit;
+	--web-enable-scale-up: false;
+	--web-scale-on-resize: true;
+	--web-show-scale-controls: false;
+	--web-scale-on-double-click: false;
+	--web-center-horizontally: false;
+	--web-center-vertically: false;
+	--web-actual-size-on-double-click: false;
+	--web-navigate-on-keypress: false;
+	--web-refresh-for-changes: false;
+	--web-add-image-compare: false;
+	--web-show-by-media-query: true;
+	--web-application: false;
+	--web-show-navigation-controls: false;
+	--web-enable-deep-linking: true;
+	--web-is-overlay: false;
+}
+#Startseite_1,
+#Web_1920__1 {
+	display: none;
+}
+@media (min-width: 0px) and (max-width: 1919px) {
 	.mediaViewInfo {
-		--web-view-name: FlowCoachTestS1;
-		--web-view-id: FlowCoachTestS1;
+		--web-view-name: Startseite 1;
+		--web-view-id: Startseite_1;
 		--web-scale-on-resize: true;
+		--web-show-by-media-query: true;
 		--web-enable-deep-linking: true;
-	}
-	:root {
-		--web-view-ids: FlowCoachTestS1;
 	}
 	* {
 		margin: 0;
@@ -21,38 +46,324 @@
 		box-sizing: border-box;
 		border: none;
 	}
-	#FlowCoachTestS1 {
+	#Startseite_1 {
 		position: absolute;
-		width: 1920px;
-		height: 1080px;
-		background-color: rgba(0,113,242,1);
+		display: block;
+		width: 375px;
+		height: 667px;
+		background: linear-gradient(90deg, rgba(0,113,242,0.98) 0%, rgba(10,0,150,0.98) 100%);
 		overflow: hidden;
-		--web-view-name: FlowCoachTestS1;
-		--web-view-id: FlowCoachTestS1;
+		--web-view-name: Startseite 1;
+		--web-view-id: Startseite_1;
 		--web-scale-on-resize: true;
+		--web-show-by-media-query: true;
 		--web-enable-deep-linking: true;
+	}
+	#Status_Bars_-_iPhone {
+		position: absolute;
+		width: 375px;
+		height: 44px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Status_Bar {
+		position: absolute;
+		width: 375px;
+		height: 44px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#BG {
+		fill: transparent;
+	}
+	.BG {
+		position: absolute;
+		overflow: visible;
+		width: 375px;
+		height: 44px;
+		left: 0px;
+		top: 0px;
+	}
+	#Status_Bar_l {
+		position: absolute;
+		width: 375px;
+		height: 44px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#BarsStatus_BarsiPhoneLight_bac {
+		fill: transparent;
+	}
+	.BarsStatus_BarsiPhoneLight_bac {
+		position: absolute;
+		overflow: visible;
+		width: 375px;
+		height: 44px;
+		left: 0px;
+		top: 0px;
+	}
+	#Battery {
+		position: absolute;
+		width: 24.328px;
+		height: 11.333px;
+		left: 336.333px;
+		top: 17.333px;
+		overflow: visible;
+	}
+	#Border {
+		opacity: 0.35;
+		fill: rgba(255,255,255,0.957);
+		stroke: rgba(0,0,0,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 10;
+		shape-rendering: auto;
+	}
+	.Border {
+		position: absolute;
+		overflow: visible;
+		width: 22px;
+		height: 11.333px;
+		left: 0px;
+		top: 0px;
+	}
+	#Cap {
+		opacity: 0.4;
+		fill: rgba(255,255,255,0.957);
+	}
+	.Cap {
+		overflow: visible;
+		position: absolute;
+		width: 1.328px;
+		height: 4px;
+		left: 23px;
+		top: 3.667px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Capacity {
+		fill: rgba(255,255,255,0.957);
+	}
+	.Capacity {
+		position: absolute;
+		overflow: visible;
+		width: 18px;
+		height: 7.333px;
+		left: 2px;
+		top: 2px;
+	}
+	#Wifi {
+		fill: rgba(255,255,255,0.957);
+	}
+	.Wifi {
+		overflow: visible;
+		position: absolute;
+		width: 15.333px;
+		height: 11px;
+		left: 316px;
+		top: 17.33px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Cellular_Connection {
+		fill: rgba(255,255,255,0.957);
+	}
+	.Cellular_Connection {
+		overflow: visible;
+		position: absolute;
+		width: 17px;
+		height: 10.667px;
+		left: 294px;
+		top: 17.667px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Time_-_Light {
+		position: absolute;
+		width: 54px;
+		height: 21px;
+		left: 22px;
+		top: 13px;
+		overflow: visible;
+	}
+	#Time_-_Blue_Task {
+		position: absolute;
+		width: 54px;
+		height: 21px;
+		left: 0px;
+		top: 0px;
+		display: none;
+		overflow: visible;
+	}
+	#Pill_Shape {
+		fill: rgba(0,122,255,1);
+	}
+	.Pill_Shape {
+		position: absolute;
+		overflow: visible;
+		width: 54px;
+		height: 21px;
+		left: 0px;
+		top: 0px;
+	}
+	#Time {
+		left: 0px;
+		top: 3px;
+		position: absolute;
+		overflow: visible;
+		width: 55px;
+		height: 17px;
+		text-align: center;
+		font-family: SFProText-Semibold;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(255,255,255,1);
+		letter-spacing: -0.2px;
+	}
+	#Time_-_Red_Task {
+		position: absolute;
+		width: 54px;
+		height: 21px;
+		left: 0px;
+		top: 0px;
+		display: none;
+		overflow: visible;
+	}
+	#Pill_Shape_y {
+		fill: rgba(255,59,48,1);
+	}
+	.Pill_Shape_y {
+		position: absolute;
+		overflow: visible;
+		width: 54px;
+		height: 21px;
+		left: 0px;
+		top: 0px;
+	}
+	#Time_z {
+		left: 0px;
+		top: 3px;
+		position: absolute;
+		overflow: visible;
+		width: 55px;
+		height: 17px;
+		text-align: center;
+		font-family: SFProText-Semibold;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(255,255,255,1);
+		letter-spacing: -0.2px;
+	}
+	#Time_-_Green_Task {
+		position: absolute;
+		width: 54px;
+		height: 21px;
+		left: 0px;
+		top: 0px;
+		display: none;
+		overflow: visible;
+	}
+	#Pill_Shape_ {
+		fill: rgba(52,199,89,1);
+	}
+	.Pill_Shape_ {
+		position: absolute;
+		overflow: visible;
+		width: 54px;
+		height: 21px;
+		left: 0px;
+		top: 0px;
+	}
+	#Time_ {
+		left: 0px;
+		top: 3px;
+		position: absolute;
+		overflow: visible;
+		width: 55px;
+		height: 16px;
+		text-align: center;
+		font-family: SFProText-Semibold;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(255,255,255,1);
+		letter-spacing: -0.2px;
+	}
+	#Time_-_Light_ {
+		position: absolute;
+		width: 54px;
+		height: 21px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Time_-_Light_background {
+		fill: transparent;
+	}
+	.Time_-_Light_background {
+		position: absolute;
+		overflow: visible;
+		width: 54px;
+		height: 21px;
+		left: 0px;
+		top: 0px;
+	}
+	#Time_ba {
+		left: 0px;
+		top: 2px;
+		position: absolute;
+		overflow: visible;
+		width: 55px;
+		height: 18px;
+		text-align: center;
+		font-family: SFProText-Semibold;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(255,255,255,0.957);
+		letter-spacing: -0.2px;
 	}
 	#Flo {
 		position: absolute;
-		width: 416px;
-		height: 564px;
-		left: 1504px;
-		top: 77px;
+		width: 183px;
+		height: 247px;
+		left: 192px;
+		top: 162px;
 		overflow: visible;
 	}
-	#Welcome__I_am_Flo_your_Flow_Co {
-		left: 174px;
-		top: 132px;
+	#Rechteck_2 {
+		fill: rgba(255,255,255,0);
+		stroke: rgba(255,250,250,0.992);
+		stroke-width: 3px;
+		stroke-linejoin: miter;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rechteck_2 {
 		position: absolute;
 		overflow: visible;
-		width: 944px;
-		height: 242px;
+		width: 259px;
+		height: 66px;
+		left: 63px;
+		top: 464px;
+	}
+	#Go {
+		left: 173px;
+		top: 477px;
+		position: absolute;
+		overflow: visible;
+		width: 30px;
+		white-space: nowrap;
 		text-align: left;
 		font-family: Avenir Next Condensed;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 80px;
-		color: rgba(253,253,253,1);
+		font-size: 30px;
+		color: rgba(232,228,228,1);
 	}
 	#Rechteck_85 {
 		fill: rgba(255,255,255,0);
@@ -66,23 +377,87 @@
 	.Rechteck_85 {
 		position: absolute;
 		overflow: visible;
-		width: 851px;
-		height: 217px;
-		left: 172px;
-		top: 762px;
+		width: 259px;
+		height: 66px;
+		left: 58px;
+		top: 544px;
 	}
 	#Statistic {
-		left: 537px;
-		top: 830px;
+		left: 147px;
+		top: 557px;
 		position: absolute;
 		overflow: visible;
-		width: 163px;
+		width: 82px;
 		white-space: nowrap;
 		text-align: left;
 		font-family: Avenir Next Condensed;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 60px;
+		font-size: 30px;
+		color: rgba(232,228,228,1);
+	}
+	#Welcome__I_am_Flo_your_Flow_Co {
+		left: 43px;
+		top: 70px;
+		position: absolute;
+		overflow: visible;
+		width: 303px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Avenir Next Condensed;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 30px;
+		color: rgba(232,228,228,1);
+	}
+}
+@media (min-width: 1920px) {
+	.mediaViewInfo {
+		--web-view-name: Web 1920 – 1;
+		--web-view-id: Web_1920__1;
+		--web-scale-on-resize: true;
+		--web-show-by-media-query: true;
+		--web-enable-deep-linking: true;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#Web_1920__1 {
+		position: absolute;
+		display: block;
+		width: 1920px;
+		height: 1080px;
+		background: linear-gradient(180deg, rgba(0,113,242,1) 0%, rgba(10,0,150,1) 100%);
+		overflow: hidden;
+		--web-view-name: Web 1920 – 1;
+		--web-view-id: Web_1920__1;
+		--web-scale-on-resize: true;
+		--web-show-by-media-query: true;
+		--web-enable-deep-linking: true;
+	}
+	#Flo_bf {
+		position: absolute;
+		width: 455px;
+		height: 616px;
+		left: 1465px;
+		top: 166.598px;
+		overflow: visible;
+	}
+	#Welcome__I_am_Flo_your_Flow_Co_bg {
+		left: 174px;
+		top: 192px;
+		position: absolute;
+		overflow: visible;
+		width: 807px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Avenir Next Condensed;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 80px;
 		color: rgba(232,228,228,1);
 	}
 	#Rechteck_86 {
@@ -97,25 +472,58 @@
 	.Rechteck_86 {
 		position: absolute;
 		overflow: visible;
-		width: 851px;
-		height: 217px;
-		left: 174px;
-		top: 493px;
+		width: 655px;
+		height: 167px;
+		left: 187px;
+		top: 525px;
 	}
-	#GO {
-		left: 567px;
-		top: 561px;
+	#Go_bi {
+		left: 465px;
+		top: 558px;
 		position: absolute;
 		overflow: visible;
-		width: 67px;
+		width: 74px;
 		white-space: nowrap;
 		text-align: left;
 		font-family: Avenir Next Condensed;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 60px;
+		font-size: 75px;
 		color: rgba(232,228,228,1);
 	}
+	#Rechteck_87 {
+		fill: rgba(255,255,255,0);
+		stroke: rgba(255,250,250,0.992);
+		stroke-width: 3px;
+		stroke-linejoin: miter;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rechteck_87 {
+		position: absolute;
+		overflow: visible;
+		width: 655px;
+		height: 167px;
+		left: 174px;
+		top: 727px;
+	}
+	#Statistic_bk {
+		left: 400px;
+		top: 760px;
+		position: absolute;
+		overflow: visible;
+		width: 206px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Avenir Next Condensed;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 76px;
+		color: rgba(232,228,228,1);
+	}
+}
+
 </style>
 <script id="applicationScript">
 ///////////////////////////////////////
@@ -3029,27 +3437,122 @@ window.application = new Application();
 </script>
 </head>
 <body>
-<div id="FlowCoachTestS1">
+<div id="Startseite_1">
+	<div id="Status_Bars_-_iPhone" class="Status_Bars___iPhone">
+		<div id="Status_Bar">
+			<svg class="BG">
+				<rect id="BG" rx="0" ry="0" x="0" y="0" width="375" height="44">
+				</rect>
+			</svg>
+			<div id="Status_Bar_l">
+				<svg class="BarsStatus_BarsiPhoneLight_bac">
+					<rect id="BarsStatus_BarsiPhoneLight_bac" rx="0" ry="0" x="0" y="0" width="375" height="44">
+					</rect>
+				</svg>
+				<div id="Battery">
+					<svg class="Border">
+						<rect id="Border" rx="2.6666667461395264" ry="2.6666667461395264" x="0" y="0" width="22" height="11.333">
+						</rect>
+					</svg>
+					<svg class="Cap" viewBox="0 0 1.328 4">
+						<path id="Cap" d="M 0 0 L 0 4 C 0.8047311305999756 3.661223411560059 1.328037977218628 2.873133182525635 1.328037977218628 2 C 1.328037977218628 1.126866698265076 0.8047311305999756 0.3387765288352966 0 0">
+						</path>
+					</svg>
+					<svg class="Capacity">
+						<rect id="Capacity" rx="1.3333333730697632" ry="1.3333333730697632" x="0" y="0" width="18" height="7.333">
+						</rect>
+					</svg>
+				</div>
+				<svg class="Wifi" viewBox="0 0 15.333 11">
+					<path id="Wifi" d="M 7.44480037689209 10.90710067749023 L 5.438700199127197 8.884799957275391 C 5.37660026550293 8.82450008392334 5.342400074005127 8.740799903869629 5.345099925994873 8.653500556945801 C 5.34689998626709 8.567100524902344 5.383800029754639 8.485199928283691 5.448600292205811 8.426700592041016 C 6.729300022125244 7.344000339508057 8.604900360107422 7.344000339508057 9.885600090026855 8.426700592041016 C 9.950400352478027 8.485199928283691 9.987299919128418 8.567100524902344 9.989100456237793 8.653500556945801 C 9.990900039672852 8.740799903869629 9.956700325012207 8.82450008392334 9.894599914550781 8.884799957275391 L 7.889400005340576 10.90710067749023 C 7.830900192260742 10.9665002822876 7.750800132751465 10.99980068206787 7.667099952697754 10.99980068206787 C 7.583400249481201 10.99980068206787 7.503300189971924 10.9665002822876 7.44480037689209 10.90710067749023 Z M 10.97459983825684 7.365600109100342 C 10.06830024719238 6.545700073242188 8.889300346374512 6.092100143432617 7.667099952697754 6.092100143432617 C 6.445800304412842 6.092999935150146 5.2677001953125 6.546600341796875 4.362299919128418 7.365600109100342 C 4.2399001121521 7.481700420379639 4.04640007019043 7.479900360107422 3.927600145339966 7.36020040512085 L 2.768399953842163 6.189300060272217 C 2.707200050354004 6.128099918365479 2.67300009727478 6.045300006866455 2.673900127410889 5.958899974822998 C 2.674800157546997 5.871600151062012 2.709900140762329 5.789700031280518 2.772900104522705 5.729400157928467 C 5.531400203704834 3.165300130844116 9.804600715637207 3.165300130844116 12.56400012969971 5.729400157928467 C 12.62610054016113 5.789700031280518 12.66209983825684 5.871600151062012 12.66300010681152 5.958899974822998 C 12.66390037536621 6.045300006866455 12.62970066070557 6.128099918365479 12.56850051879883 6.189300060272217 L 11.40929985046387 7.36020040512085 C 11.34852981567383 7.420970916748047 11.26899433135986 7.45134973526001 11.18937015533447 7.451342582702637 C 11.11215686798096 7.45133638381958 11.03485870361328 7.422757148742676 10.97459983825684 7.365600109100342 Z M 13.64400005340576 4.670100212097168 C 12.03120040893555 3.138300180435181 9.891900062561035 2.284199953079224 7.667099952697754 2.284199953079224 C 5.442300319671631 2.284199953079224 3.30210018157959 3.138300180435181 1.689300060272217 4.670100212097168 C 1.568700075149536 4.788899898529053 1.374300003051758 4.787100315093994 1.254600048065186 4.666500091552734 L 0.09360000491142273 3.496500015258789 C 0.0333000011742115 3.43530011177063 -0.0009000000427477062 3.353399991989136 0 3.267000198364258 C 0.0009000000427477062 3.181500196456909 0.03510000184178352 3.099600076675415 0.09630000591278076 3.039299964904785 C 4.328999996185303 -1.013400077819824 11.00520038604736 -1.013400077819824 15.23700046539307 3.039299964904785 C 15.2982006072998 3.099600076675415 15.33240032196045 3.181500196456909 15.33330059051514 3.267000198364258 C 15.33419990539551 3.353399991989136 15.30000019073486 3.43530011177063 15.23970031738281 3.496500015258789 L 14.07870006561279 4.666500091552734 C 14.0181713104248 4.727484703063965 13.93878650665283 4.758090019226074 13.85936737060547 4.75808572769165 C 13.78173160552979 4.758081436157227 13.70406055450439 4.728825569152832 13.64400005340576 4.670100212097168 Z">
+					</path>
+				</svg>
+				<svg class="Cellular_Connection" viewBox="0 0 17 10.667">
+					<path id="Cellular_Connection" d="M 15.00030040740967 10.6668004989624 C 14.44770050048828 10.6668004989624 14.00040054321289 10.21860027313232 14.00040054321289 9.666900634765625 L 14.00040054321289 0.9999000430107117 C 14.00040054321289 0.4473000168800354 14.44770050048828 0 15.00030040740967 0 L 16.00020027160645 0 C 16.55190086364746 0 17.00010108947754 0.4473000168800354 17.00010108947754 0.9999000430107117 L 17.00010108947754 9.666900634765625 C 17.00010108947754 10.21860027313232 16.55190086364746 10.6668004989624 16.00020027160645 10.6668004989624 L 15.00030040740967 10.6668004989624 Z M 10.33290004730225 10.6668004989624 C 9.781200408935547 10.6668004989624 9.333000183105469 10.21860027313232 9.333000183105469 9.666900634765625 L 9.333000183105469 3.333600044250488 C 9.333000183105469 2.781000137329102 9.781200408935547 2.333699941635132 10.33290004730225 2.333699941635132 L 11.33370018005371 2.333699941635132 C 11.88539981842041 2.333699941635132 12.33360004425049 2.781000137329102 12.33360004425049 3.333600044250488 L 12.33360004425049 9.666900634765625 C 12.33360004425049 10.21860027313232 11.88539981842041 10.6668004989624 11.33370018005371 10.6668004989624 L 10.33290004730225 10.6668004989624 Z M 5.666399955749512 10.6668004989624 C 5.114700317382812 10.6668004989624 4.666500091552734 10.21860027313232 4.666500091552734 9.666900634765625 L 4.666500091552734 5.666399955749512 C 4.666500091552734 5.114700317382812 5.114700317382812 4.666500091552734 5.666399955749512 4.666500091552734 L 6.666300296783447 4.666500091552734 C 7.218900203704834 4.666500091552734 7.667099952697754 5.114700317382812 7.667099952697754 5.666399955749512 L 7.667099952697754 9.666900634765625 C 7.667099952697754 10.21860027313232 7.218900203704834 10.6668004989624 6.666300296783447 10.6668004989624 L 5.666399955749512 10.6668004989624 Z M 0.9999000430107117 10.6668004989624 C 0.4473000168800354 10.6668004989624 0 10.21860027313232 0 9.666900634765625 L 0 7.667099952697754 C 0 7.114500045776367 0.4473000168800354 6.666300296783447 0.9999000430107117 6.666300296783447 L 1.999800086021423 6.666300296783447 C 2.5524001121521 6.666300296783447 2.99970006942749 7.114500045776367 2.99970006942749 7.667099952697754 L 2.99970006942749 9.666900634765625 C 2.99970006942749 10.21860027313232 2.5524001121521 10.6668004989624 1.999800086021423 10.6668004989624 L 0.9999000430107117 10.6668004989624 Z">
+					</path>
+				</svg>
+				<div id="Time_-_Light" class="Time___Light">
+					<div id="Time_-_Blue_Task">
+						<svg class="Pill_Shape">
+							<rect id="Pill_Shape" rx="10.5" ry="10.5" x="0" y="0" width="54" height="21">
+							</rect>
+						</svg>
+						<div id="Time">
+							<span>9:4</span><span>1</span>
+						</div>
+					</div>
+					<div id="Time_-_Red_Task">
+						<svg class="Pill_Shape_y">
+							<rect id="Pill_Shape_y" rx="10.5" ry="10.5" x="0" y="0" width="54" height="21">
+							</rect>
+						</svg>
+						<div id="Time_z">
+							<span>9:4</span><span>1</span>
+						</div>
+					</div>
+					<div id="Time_-_Green_Task">
+						<svg class="Pill_Shape_">
+							<rect id="Pill_Shape_" rx="10.5" ry="10.5" x="0" y="0" width="54" height="21">
+							</rect>
+						</svg>
+						<div id="Time_">
+							<span>9:4</span><span>1</span>
+						</div>
+					</div>
+					<div id="Time_-_Light_">
+						<svg class="Time_-_Light_background">
+							<rect id="Time_-_Light_background" rx="0" ry="0" x="0" y="0" width="54" height="21">
+							</rect>
+						</svg>
+						<div id="Time_ba">
+							<span>9:41</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<img id="Flo" src="Flo.png" srcset="Flo.png 1x, Flo@2x.png 2x">
 		
-	<div id="Welcome__I_am_Flo_your_Flow_Co">
-		<span>Welcome! <br/>I am Flo your Flow Coach </span>
+	<svg class="Rechteck_2">
+		<rect id="Rechteck_2" rx="33" ry="33" x="0" y="0" width="259" height="66">
+		</rect>
+	</svg>
+	<div id="Go">
+		<span>Go</span>
 	</div>
 	<svg class="Rechteck_85">
-		<rect id="Rechteck_85" rx="33" ry="33" x="0" y="0" width="851" height="217">
+		<rect id="Rechteck_85" rx="33" ry="33" x="0" y="0" width="259" height="66">
 		</rect>
 	</svg>
 	<div id="Statistic">
 		<span>Statistic</span>
 	</div>
-	<svg class="Rechteck_86">
-		<rect id="Rechteck_86" rx="33" ry="33" x="0" y="0" width="851" height="217">
-		</rect>
-	</svg>
-	<div id="GO">
-		<a href ="FlowCoachTestS2.html"><span>GO</span></a>
+	<div id="Welcome__I_am_Flo_your_Flow_Co">
+		<span>Welcome! <br/>I am Flo your Flow Coach </span>
 	</div>
 </div>
-<a> href="FlowCoachTestS2.html" </a>
+<div id="Web_1920__1">
+	<img id="Flo_bf" src="Flo_bf.png" srcset="Flo_bf.png 1x, Flo_bf@2x.png 2x">
+		
+	<div id="Welcome__I_am_Flo_your_Flow_Co_bg">
+		<span>Welcome! <br/>I am Flo your Flow Coach </span>
+	</div>
+	<svg class="Rechteck_86">
+		<rect id="Rechteck_86" rx="33" ry="33" x="0" y="0" width="655" height="167">
+		</rect>
+	</svg>
+	<div id="Go_bi">
+		<span>Go</span>
+	</div>
+	<svg class="Rechteck_87">
+		<rect id="Rechteck_87" rx="33" ry="33" x="0" y="0" width="655" height="167">
+		</rect>
+	</svg>
+	<div id="Statistic_bk">
+		<span>Statistic</span>
+	</div>
+</div>
+
 </body>
 </html>
